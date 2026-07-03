@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef7ee;
+}
+
+.banner{
+    background:url("costa-rica.webp") center/cover;
+    height:220px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px;
+}
+
+.logo img{
+    width:140px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.conteudo{
+    display:grid;
+    grid-template-columns:3fr 1fr;
+    gap:20px;
+    padding:20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 8px rgba(0,0,0,.2);
+}
+
+.card h2{
+    color:green;
+    margin-bottom:10px;
+}
+
+aside{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.info{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 8px rgba(0,0,0,.2);
+}
+
+.formulario{
+    padding:30px;
+}
+
+.formulario h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+input,
+select,
+textarea{
+    padding:10px;
+    border:1px solid #999;
+    border-radius:5px;
+}
+
+.checkbox{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+button{
+    background:green;
+    color:white;
+    border:none;
+    padding:15px;
+    cursor:pointer;
+    font-size:16px;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#0d6b0d;
+}
+
+footer{
+    background:#145214;
+    color:white;
+    display:flex;
+    justify-content:space-around;
+    padding:30px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+footer div{
+    width:250px;
+}
+
+@media(max-width:768px){
+
+.banner{
+    flex-direction:column;
+    height:auto;
+    text-align:center;
+    gap:20px;
+}
+
+nav ul{
+    flex-direction:column;
+}
+
+.conteudo{
+    grid-template-columns:1fr;
+}
+
+footer{
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+}
